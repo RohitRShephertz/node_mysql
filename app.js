@@ -38,9 +38,9 @@ var connection = mysql.createConnection({
 });
 
 // Database setup
-connection.query('CREATE DATABASE IF NOT EXISTS demo_db', function (err) {
+connection.query('CREATE DATABASE IF NOT EXISTS test', function (err) {
   if (err) throw err;
-  connection.query('USE demo_db', function (err) {
+  connection.query('USE test', function (err) {
     if (err) throw err;
     connection.query('CREATE TABLE IF NOT EXISTS user(' +
       'id INT NOT NULL AUTO_INCREMENT,' +  
